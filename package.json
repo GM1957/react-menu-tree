@@ -1,0 +1,43 @@
+{
+  "name": "react-menu-tree",
+  "version": "0.0.1",
+  "description": "simple and highly cuatomizable react tab menu tree",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": false,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@types/node": "^16.11.59",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.3",
+    "web-vitals": "^2.1.4"
+  },
+  "author": "gm1957",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "tab",
+    "menu",
+    "tree"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  }
+}
