@@ -22,7 +22,7 @@ const MenuTree = ({
             key={"menu-row-" + rowNo}
             {...rowProps}
           >
-            {rowArr.map((rowItem: any, activeNodeIndex) => {
+            {rowArr.map((rowItem: any, activeNodeIndex: number) => {
               return (
                 <React.Fragment key={"row-node-" + activeNodeIndex}>
                   <CustomNodeComponent
