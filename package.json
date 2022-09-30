@@ -4,7 +4,7 @@
   "description": "simple and highly cuatomizable react tab menu tree",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/GM1957/react-menu-tree.git"
   },
   "private": false,
   "main": "dist/cjs/index.js",
